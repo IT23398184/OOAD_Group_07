@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="Logoo.png" alt="Company Logo" />
+      </a>
+      <!--Menu Icon-->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-search" id="search-btn"></i>
+
+      <!--Links-->
+      <nav>
+        <ul class="navbar">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="schedule.html">Schedules</a></li>
+          <li><a href="register.html">Bookings</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="message.html">Messages</a></li>
+        </ul>
+      </nav>
+      <div class="header-social">
+        <a href="#"><i class="bx bx-user" aria-label="Profile"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="messages">
+        <h1 class="title">Messages</h1>
+        <div class="box-container">
+          <div class="box">
+            <p>User ID: <span>12345</span></p>
+            <p>Name: <span>John Doe</span></p>
+            <p>Number: <span>+1234567890</span></p>
+            <p>Email: <span>johndoe@example.com</span></p>
+            <p>Message: <span>Hello, I'd like to inquire about...</span></p>
+            <a
+              href="#"
+              onclick="return confirm('Delete this message?');"
+              class="delete-btn"
+              >Delete</a
+            >
+          </div>
+        </div>
+
+        <div class="box-container">
+          <div class="box">
+            <p>user id : <span>user id</span></p>
+            <p>name : <span>name</span></p>
+            <p>number : <span>number</span></p>
+            <p>email : <span>email</span></p>
+            <p>message : <span>message</span></p>
+            <a
+              href=""
+              onclick="return confirm('delete this message?');"
+              class="delete-btn"
+              >delete</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://m.facebook.com/p/KDF-GYM-piliyandala-100075894736100/"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-google"></i></a>
+      </div>
+
+      <ul class="list">
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="schedule.html">Schedules</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="message.html">Messages</a></li>
+      </ul>
+      <p class="copyright">
+        © 2024 Dogwood, All rights reserved. Powered by B-People Developers
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

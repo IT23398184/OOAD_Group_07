@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="Logoo.png" alt="" />
+      </a>
+      <!--Menu Icon-->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-search" id="search-btn"></i>
+      <!--Links-->
+      <ul class="navbar">
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="schedule.html">Shedules</a></li>
+        <li><a href="register">Bookings</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="message.html">Messages </a></li>
+      </ul>
+      <div class="header-social">
+        <a href="#"> <i class="bx bx-user"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="schedule">
+        <h2>Session & Schedule</h2>
+        <div class="filter">
+          <div>
+            <label for="day">Filter by Day:</label>
+            <select id="day" onchange="filterSchedule()">
+                <option value="all">All</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+        
+            <label for="time">Filter by Time:</label>
+            <select id="time" onchange="filterSchedule()">
+                <option value="all">All</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        </div>
+        
+        <table id="class-schedule">
+            <thead>
+                <tr>
+                    <th>Session</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                    <th>Progression Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-day="monday" data-time="morning">
+                    <td>Cardio</td>
+                    <td>Monday</td>
+                    <td>Morning</td>
+                    <td>champika</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr data-day="tuesday" data-time="afternoon">
+                    <td>Streangth</td>
+                    <td>Tuesday</td>
+                    <td>Afternoon</td>
+                    <td>Ashen</td>
+                    <td>average</td>
+                </tr>
+                <tr data-day="wednesday" data-time="evening">
+                    <td>Streangth & cardio</td>
+                    <td>Wednesday</td>
+                    <td>Evening</td>
+                    <td>Nadeera</td>
+                    <td>Advanced</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>  
+      </section>
+    </main>
+
+    <section class="footer">
+      <div class="footer-content">
+        <div class="social">
+          <a href="https://m.facebook.com/p/KDF-GYM-piliyandala-100075894736100/">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-google"></i></a>
+        </div>
+    
+        <ul class="footer-links">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="schedule.html">Schedules</a></li>
+          <li><a href="register.html">Bookings</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="message.html">Messages</a></li>
+        </ul>
+      
+      <p class="copyright">
+        © 2024 Dogwood, All rights reserved. Powered by B-People Developers
+      </p>
+    </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
